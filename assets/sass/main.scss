@@ -1,7 +1,11 @@
-@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import "reset";
 @import "variables";
+@import "infoSection";
 @import "home";
+@import "resume";
+@import "work";
+@import "contact";
 
 *{
   box-sizing: border-box;
@@ -27,6 +31,7 @@ html, body {
 }
 
 .primary-btn{
+  text-decoration: none;
   background: $color1;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -38,9 +43,14 @@ html, body {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-right: 15px;
+  transition: $btnTransitions;
+  &:hover{
+    background: black;
+  }
 }
 
 .ghost-btn{
+  text-decoration: none;
   border: 4px solid $color1;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -51,6 +61,10 @@ html, body {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 3px;
+  transition: $btnTransitions;
+  &:hover{
+    border-color: black;
+  }
 }
 
 #menu{
@@ -94,4 +108,11 @@ html, body {
     bottom: 0;
     transform: translate3d(0,0,0);
   }
+}
+// NOTE PUTTING THE PADDING FORCES THE SCROLLBAR TO THE SIDE
+.scroll-section{
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 56px;
 }

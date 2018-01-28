@@ -19,7 +19,7 @@
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Portfolio</a>
-        <a href="/contact.html">Contact</a>
+        <a href="#">Content</a>
       </nav>
 
     </section>
@@ -49,21 +49,37 @@
       <div class="img-container">
         <div class="img-container">
           <div class="user-img">
-
+            <form action="/" method="POST">
+              <input type="text" name="name" required/>
+              <input type="email" name="email" required/>
+              <input type="text" name="budget"/>
+              <textarea name="message" rows="8" cols="80" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
           </div>
         </div>
       </div>
 
-      <div class="profile-section">
+      <div class="contact-section">
         <div class="profile">
-          <h1>Jessica <br />
-             <span>Burciaga</span></h1>
-             <h5>Not A Web Developer </h5>
-             <p>
-               Lorem ipsum dolor amet chicharrones scenester DIY, pinterest wayfarers forage gentrify cliche brooklyn. Cronut jean shorts pop-up readymade raw denim cold-pressed. Microdosing tumeric aesthetic +1 lomo trust fund. YOLO dreamcatcher pour-over selfies. Authentic umami small batch typewriter, stumptown banh mi hexagon master cleanse meh gastropub. Blue bottle enamel pin tilde green juice cliche vice.
-             </p>
-             <a href="/work.html" class="primary-btn">Portfolio</a>
-             <a href="/resume.html" class="ghost-btn">Resume</a>
+          <div class="contact-box">
+            <h5>Phone</h5>
+            <p>
+              (123) 456-7890
+            </p>
+          </div>
+          <div class="contact-box">
+            <h5>Email</h5>
+            <p>
+              jessica@gmail.com
+            </p>
+          </div>
+          <div class="contact-box">
+            <h5>Address</h5>
+            <p>
+              123 Fake Street, Springfield, IL
+            </p>
+          </div>
         </div>
       </div>
     </section>
